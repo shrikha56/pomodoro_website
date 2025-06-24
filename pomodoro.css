@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(11, 11, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 2em;
+    padding: 6em 3em;
+}
+
+.title{
+    font-size: 3em;
+}
+
+hr {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 5px;
+    border-radius: 1em;
+    border: none; /* Remove default border */
+}
+
+
+.timer{
+    font-size: 10em;
+    font-weight: 700;
+}
+
+.button_wrapper {
+    display: flex;
+    gap: 1em; /* Change 'lem' to '1em' */
+}
+
+button {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30); /* Darker background for contrast */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+#start{
+    background-color: rgb(47, 255, 78);
+    width: 200px; /* Set a fixed width */
+    height: 90px; /* Set a fixed height */
+}
+
+#start:hover {
+    background-color: rgb(30, 200, 60); /* Lighter background on hover */
+}
+
+#set-time{
+    background-color: rgb(6, 93, 130);
+
+}
+#set-time:hover {
+    background-color: rgb(6, 73, 101); /* Lighter background on hover */
+}
+
+#reset{
+    background-color: aqua;
+}
+#reset:hover {
+    background-color: rgb(0, 180, 180); /* Slightly darker aqua */
+}
+
+
+#chat {
+  background-color: rgb(244, 77, 0);
+  width: 70px; /* Slightly larger for better circular appearance */
+  height: 60px;
+  border-radius: 50%; /* Ensure a perfect circle */
+  position: absolute;
+  top: 710px; /* Move lower */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  aspect-ratio: 1/1; /* Ensures width and height are always equal */
+}
+
+#chat:hover {
+  background-color: rgb(198, 76, 0); /* Slightly darker aqua */
+}
+
+
+#chatForm {
+  display: none;
+  position: fixed;
+  top: 2%;
+  left: 78%;
+  transform: translate(-50%, 0);
+  width: 350px;
+  background: rgba(255, 255, 255, 0.9); /* Translucent effect */
+  border: 2px solid #ddd;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  color: rgb(0, 0, 75);
+}
+
+#chatForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    resize: none;
+    min-height: 120px;
+    border-radius: 5px;
+  }
+  
+  /* Focus effect */
+  #chatForm textarea:focus {
+    background-color: #eee;
+    outline: none;
+  }
+
+.chat-buttons .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 14px; /* Decreased font size */
+    border: none;
+    cursor: pointer;
+    width: auto; /* Adjusts to content size */
+    min-width: 80px; /* Ensures buttons are not too small */
+    margin: 5px; /* Adds space between buttons */
+    border-radius: 5px;
+  }
+  
+  /* Smaller close button */
+  .chat-buttons .cancel {
+    background-color: red;
+  }
+  
+
+

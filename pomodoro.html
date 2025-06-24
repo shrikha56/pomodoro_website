@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pomodoro Timer</h1>
+        <hr> 
+        <p class="timer" id="timer">25:00</p> <!-- Shows MM:SS format -->
+        <div class="button_wrapper">
+            <button id="start">Start</button>
+            <button id="set-time">Set Time</button>
+            <button id="reset">Reset</button>
+            <button id="chat">Chat</button> <!-- Removed inline onclick -->
+        </div>
+
+        <!-- Chat Form -->
+        <div id="chatForm" style="display: none;">
+            <div id="chatContainer"></div> 
+            <h1>Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea id="msg" placeholder="Type message..." required></textarea>
+
+            <div class="chat-buttons">
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="./audio_file.mp3" preload="auto"></audio>
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>
+
+
